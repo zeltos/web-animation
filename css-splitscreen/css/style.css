@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Asap&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+section.info-content {
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111111;
+  position: relative;
+  overflow: hidden;
+}
+
+section.info-content:target {
+  height: 100vh;
+  overflow: scroll;
+}
+
+section.info-content .background-info {
+  width: 100vw;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  opacity: .15;
+  top: 0;
+}
+
+section.info-content .container {
+  height: 2000px;
+  z-index: 2;
+  color: #dcdbdb;
+  max-width: 1200px;
+  padding-top: 60px;
+}
+
+section.info-content .container .back-to-top a {
+  color: #fff;
+}
+
+section.info-content .container h1 {
+  color: #f8f8f8;
+  font-size: 5em;
+  line-height: 0;
+}
+
+section.info-content .container h1 span {
+  font-size: 32px;
+  color: #acacac;
+}
+
+section.info-content .container h3 {
+  font-size: 1.6em;
+  color: #acacac;
+}
+
+section.split {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background-color: #000;
+}
+
+section.split .screen {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1;
+}
+
+section.split .screen:hover {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  opacity: 1;
+}
+
+section.split .screen:hover .content h3 {
+  opacity: 0;
+  bottom: -10%;
+}
+
+section.split .screen:hover .content .container {
+  opacity: 1;
+  top: 30%;
+}
+
+section.split .screen:nth-child(1) {
+  background-image: url("../images/ticket.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.split .screen:nth-child(2) {
+  background-image: url("../images/concert.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.split .screen:nth-child(3) {
+  background-image: url("../images/line-up.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.split .screen .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.split .screen .content h3 {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  bottom: 40px;
+  opacity: 1;
+  color: #f8f8f8;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6em;
+}
+
+section.split .screen .content .container {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  width: 450px;
+  position: absolute;
+  top: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+section.split .screen .content .container .more-link {
+  color: #fff;
+}
+
+section.split .screen .content .container h1 {
+  color: #f8f8f8;
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+}
+
+section.split .screen .content .container p {
+  font-family: 'Asap', sans-serif;
+  color: #e4e3e3;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=style.css.map */
