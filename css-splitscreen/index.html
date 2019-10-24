@@ -20,6 +20,35 @@
             window.requestAnimationFrame(updateLax)
         }
     </script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch/src/mgGlitch.min.js"></script>
+    <script>
+       // https://github.com/hmongouachon/mgGlitch
+
+$( function() {
+		$( ".glitch-img" ).mgGlitch({
+          // set 'true' to stop the plugin
+				  destroy : false, 
+          // set 'false' to stop glitching
+          glitch: true, 
+          // set 'false' to stop scaling
+          scale: true, 
+          // set 'false' to stop glitch blending
+          blend : true, 
+          // select blend mode type
+          blendModeType : 'hue',
+          // set min time for glitch 1 elem
+          glitch1TimeMin : 200, 
+          // set max time for glitch 1 elem
+          glitch1TimeMax : 400,
+          // set min time for glitch 2 elem
+          glitch2TimeMin : 10, 
+          // set max time for glitch 2 elem
+          glitch2TimeMax : 100, 
+		});
+});
+    </script>
     <title>Document</title>
 </head>
 
@@ -38,8 +67,8 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
                             sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
                         fuga minima possimus necessitatibus excepturi laudantium natus.</p>
-                        <br>
-                        <p><a href="#ticket" class="animated infinite flash more-link">More Info</a></p>
+                    <br>
+                    <p><a href="#ticket" class="animated infinite flash more-link">More Info</a></p>
                 </div>
             </div>
         </div>
@@ -64,50 +93,50 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
                             sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
                         fuga minima possimus necessitatibus excepturi laudantium natus.</p>
-                        <p><a href="#line-up" class="animated infinite flash more-link">More Info</a></p>
+                    <p><a href="#line-up" class="animated infinite flash more-link">More Info</a></p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="info-content" id="info">
-           <img class="background-info" src="images/concert.jpg" alt="">
-           <div class="container">
-            <p align='center' class="animated infinite flash back-to-top"><a href="#" >back to top</a></p>
-            <h1 >ABOUT <span>Indigo Music Festival</span></h1>
+        <img class="background-info glitch-img" src="images/concert.jpg" alt="">
+        <div class="container">
+            <p align='center' class="animated infinite flash back-to-top"><a href="#">back to top</a></p>
+            <h1>ABOUT <span>Indigo Music Festival</span></h1>
             <!-- <h3 class='lax' data-lax-preset="lazy"></h3> -->
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
                     sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
                 fuga minima possimus necessitatibus excepturi laudantium natus.</p>
-               
-           </div>
+
+        </div>
     </section>
 
     <section class="info-content" id="line-up">
-            <img class="background-info" src="images/line-up.jpg" alt="">
-            <div class="container">
-             <p align='center' class="animated infinite flash back-to-top"><a href="#" >back to top</a></p>
-             <h1 >Line Up <span>Indigo Music Festival</span></h1>
-             <!-- <h3 class='lax' data-lax-preset="lazy"></h3> -->
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
-                     sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
-                 fuga minima possimus necessitatibus excepturi laudantium natus.</p>
-                
-            </div>
-     </section>
+        <img class="background-info glitch-img" src="images/line-up.jpg" alt="">
+        <div class="container">
+            <p align='center' class="animated infinite flash back-to-top"><a href="#">back to top</a></p>
+            <h1>Line Up <span>Indigo Music Festival</span></h1>
+            <!-- <h3 class='lax' data-lax-preset="lazy"></h3> -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
+                    sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
+                fuga minima possimus necessitatibus excepturi laudantium natus.</p>
 
-     <section class="info-content" id="ticket">
-            <img class="background-info" src="images/ticket.jpeg" alt="">
-            <div class="container">
-             <p align='center' class="animated infinite flash back-to-top"><a href="#" >back to top</a></p>
-             <h1 >Ticket <span>Indigo Music Festival</span></h1>
-             <!-- <h3 class='lax' data-lax-preset="lazy"></h3> -->
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
-                     sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
-                 fuga minima possimus necessitatibus excepturi laudantium natus.</p>
-                
-            </div>
-     </section>
+        </div>
+    </section>
+
+    <section class="info-content" id="ticket">
+        <img class="background-info" src="images/ticket.jpeg" alt="">
+        <div class="container">
+            <p align='center' class="animated infinite flash back-to-top"><a href="#">back to top</a></p>
+            <h1>Ticket <span>Indigo Music Festival</span></h1>
+            <!-- <h3 class='lax' data-lax-preset="lazy"></h3> -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong> Mollitia quia aspernatur sint
+                    sequi provident</strong>, eaque cum voluptate. Aliquam deserunt soluta, fugiat officia illo,
+                fuga minima possimus necessitatibus excepturi laudantium natus.</p>
+
+        </div>
+    </section>
 
 </body>
 
